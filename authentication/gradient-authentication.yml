@@ -1,0 +1,18 @@
+generated: '2026-07-19'
+method: searched
+source: openapi/gradient-cloud-openapi.yml
+docs: https://docs.gradient.network/enterprise-solutions/gradient-cloud/api-reference-documentation
+notes: >-
+  Gradient Cloud uses Access Key authentication passed as an HTTP Bearer token
+  (`Authorization: Bearer <access-key>`). The List Models endpoint is public (no
+  auth). No OAuth or OpenID Connect surface is published; there is no scope model.
+summary:
+  types:
+  - http
+schemes:
+- name: AccessKey
+  type: http
+  scheme: bearer
+  description: 'Access Key passed as `Authorization: Bearer <access-key>`.'
+  sources:
+  - openapi/gradient-cloud-openapi.yml

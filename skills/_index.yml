@@ -1,0 +1,11 @@
+generated: '2026-07-19'
+method: generated
+skills:
+  - file: gradient-chat-completion.md
+    name: Run a chat completion on Gradient Cloud
+    api: openapi/gradient-cloud-openapi.yml
+    operations: [listModels, createChatCompletion]
+  - file: gradient-text-completion.md
+    name: Run a text completion on Gradient Cloud
+    api: openapi/gradient-cloud-openapi.yml
+    operations: [listModels, createCompletion]

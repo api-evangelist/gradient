@@ -1,0 +1,23 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.gradient.network/enterprise-solutions/gradient-cloud/api-reference-documentation
+versioning:
+  scheme: uri-path
+  current: v1
+  base_url: https://apis.gradient.network/api/v1
+  docs: https://docs.gradient.network/enterprise-solutions/gradient-cloud/api-reference-documentation
+deprecation:
+  policy_url: null
+  sunset_header: false
+  notes: >-
+    No formal deprecation/Sunset-header policy published for the Cloud API. On the
+    user-product side, the Sentry Node Open Beta and legacy rewards seasons are
+    documented as "concluded", but that is program lifecycle, not API deprecation.
+sla:
+  url: null
+  uptime_target: null
+status_page: null
+status_page_notes: >-
+  Docs reference "the system status page" but no reachable status host was found
+  (status.gradient.network does not resolve). No StatusPage pointer emitted.
+deprecated_operations: []

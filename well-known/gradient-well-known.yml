@@ -1,0 +1,27 @@
+generated: '2026-07-19'
+method: searched
+notes: >-
+  Probed the /.well-known/ discovery surface on the API host and the marketing
+  host. No well-known documents are published (all 404). Recorded here as an
+  honest negative result; no WellKnown pointer is emitted.
+hosts:
+  - host: https://apis.gradient.network
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+  - host: https://gradient.network
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+  - host: https://docs.gradient.network
+    documents:
+      - path: /.well-known/security.txt
+        status: 404

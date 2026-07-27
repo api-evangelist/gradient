@@ -1,0 +1,48 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/GradientHQ
+notes: >-
+  Gradient publishes its Open Intelligence Stack as first-party open-source
+  projects under the GradientHQ GitHub org. These are frameworks / infrastructure
+  (distributed serving, P2P data motion, multi-agent, RL), not client SDKs for the
+  Gradient Cloud REST API — that API is OpenAI-compatible, so any OpenAI client
+  library works against it. Parallax installs from source (git clone + install.sh),
+  not from PyPI, so no PyPI package is claimed as official here.
+packages:
+  - language: python
+    registry: github
+    name: parallax
+    url: https://github.com/GradientHQ/parallax
+    install: git clone https://github.com/GradientHQ/parallax.git && cd parallax && ./install.sh
+    official: true
+    description: Distributed model serving framework — build your own AI cluster anywhere. Ships the `parallax` CLI (`parallax serve`).
+  - language: rust
+    registry: github
+    name: lattica
+    url: https://github.com/GradientHQ/lattica
+    official: true
+    description: Universal peer-to-peer data motion engine — moves model weights, inference tokens, and file shards across a global machine mesh.
+  - language: rust
+    registry: github
+    name: lattica-tools
+    url: https://github.com/GradientHQ/lattica-tools
+    official: true
+    description: Tools for building Lattica applications.
+  - language: python
+    registry: github
+    name: symphony
+    url: https://github.com/GradientHQ/symphony
+    official: true
+    description: Decentralized multi-agent framework for intelligent agent collaboration across edge devices (task routing + voting).
+  - language: python
+    registry: github
+    name: symphony-coord
+    url: https://github.com/GradientHQ/symphony-coord
+    official: true
+    description: Coordinator for the Symphony multi-agent framework.
+  - language: c++
+    registry: github
+    name: parallax_win_cli
+    url: https://github.com/GradientHQ/parallax_win_cli
+    official: true
+    description: Windows command-line interface for Parallax.

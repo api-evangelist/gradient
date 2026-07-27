@@ -1,0 +1,23 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/GradientHQ/parallax
+notes: >-
+  Gradient ships the `parallax` CLI as part of its open-source Parallax
+  distributed-serving framework (the flagship GradientHQ project). It runs and
+  hosts models across a self-assembled cluster of distributed nodes; it is not a
+  management CLI for the Gradient Cloud REST API. A separate Windows CLI
+  (parallax_win_cli) is published for Windows hosts. Binaries are catalogued in
+  packages/.
+clis:
+  - name: parallax
+    repo: https://github.com/GradientHQ/parallax
+    install:
+      - git clone https://github.com/GradientHQ/parallax.git && cd parallax && ./install.sh && source .venv/bin/activate
+    commands:
+      - name: serve
+        description: Host a model locally / join a Parallax cluster.
+        example: parallax serve -m Qwen/Qwen3.5-0.8B
+  - name: parallax_win_cli
+    repo: https://github.com/GradientHQ/parallax_win_cli
+    platform: windows
+    description: Windows command-line interface for Parallax.

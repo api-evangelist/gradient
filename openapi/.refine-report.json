@@ -1,0 +1,18 @@
+{
+  "provider": "gradient",
+  "sources": [
+    "gradient-chat-api-openapi.yml",
+    "gradient-completions-api-openapi.yml",
+    "gradient-models-api-openapi.yml"
+  ],
+  "outputs": [
+    "gradient-chat-api-openapi.yml",
+    "gradient-completions-api-openapi.yml",
+    "gradient-models-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

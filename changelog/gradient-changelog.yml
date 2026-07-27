@@ -1,0 +1,20 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/GradientHQ/parallax/releases
+notes: >-
+  Gradient Cloud (the REST API) publishes no dated changelog. This captures the
+  tagged release history of Parallax, the flagship open-source serving framework,
+  from GitHub Releases — the recent window only.
+scheme: semver
+project: parallax
+current_version: v0.1.2
+entries:
+  - version: v0.1.2
+    date: '2025-12-02'
+  - version: v0.1.1
+    date: '2025-11-26'
+  - version: v0.1.0
+    date: '2025-11-11'
+  - version: v0.0.1
+    date: '2025-09-29'
+    highlights: Initial public release; #1 Product of the Day on Product Hunt (Oct 2025).

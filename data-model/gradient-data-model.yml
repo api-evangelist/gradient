@@ -1,0 +1,36 @@
+generated: '2026-07-19'
+method: derived
+source: openapi/gradient-cloud-openapi.yml
+entities:
+  - name: Model
+    id_field: id
+    description: An available inference model (e.g. qwen/qwen3-coder-480b-instruct-fp8).
+  - name: ChatCompletion
+    description: Result of a chat completion request; contains choices and usage.
+  - name: Completion
+    description: Result of a text completion request; contains choices and usage.
+  - name: ChatMessage
+    description: A single role/content message in a chat conversation.
+  - name: Usage
+    description: Token accounting (prompt/completion/total) for a completion.
+relationships:
+  - from: ChatCompletion
+    to: Model
+    type: belongs_to
+    via: model
+  - from: Completion
+    to: Model
+    type: belongs_to
+    via: model
+  - from: ChatCompletion
+    to: ChatMessage
+    type: has_many
+    via: choices[].message
+  - from: ChatCompletion
+    to: Usage
+    type: has_one
+    via: usage
+  - from: Completion
+    to: Usage
+    type: has_one
+    via: usage

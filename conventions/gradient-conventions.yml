@@ -1,0 +1,40 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.gradient.network/enterprise-solutions/gradient-cloud/api-reference-documentation
+authentication:
+  style: http-bearer
+  header: Authorization
+  format: Bearer <access-key>
+  public_operations: [listModels]
+  ref: authentication/gradient-authentication.yml
+idempotency:
+  supported: false
+  notes: No idempotency-key header or contract is documented.
+pagination:
+  supported: false
+  notes: No paginated collection endpoints are documented (model list returns a single object.list).
+streaming:
+  supported: true
+  transport: server-sent-events
+  content_type: text/event-stream
+  request_field: stream
+  terminator: 'data: [DONE]'
+  applies_to: [createChatCompletion, createCompletion]
+versioning:
+  style: uri-path
+  current: v1
+  ref: lifecycle/gradient-lifecycle.yml
+error_envelope:
+  field: error
+  shape: '{ "error": { "message": string, "type": string, "code": string } }'
+  standard: openai-style
+  ref: errors/gradient-problem-types.yml
+rate_limiting:
+  documented: true
+  free_tier: 60 requests/minute, 3 concurrent
+  paid_tier: plan-based, typically 1000-10000 requests/minute, 10-100 concurrent
+  signal: 429 Rate Limit Exceeded
+  retry_guidance: exponential backoff on 429/500/502/503/504 (per docs best-practices)
+compatibility:
+  standard: openai-compatible
+  notes: Request/response objects mirror OpenAI; existing OpenAI client libraries work by pointing base_url at https://apis.gradient.network/api/v1.

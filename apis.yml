@@ -1,23 +1,101 @@
 aid: gradient
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/gradient.png
 name: Gradient
-description: 'Gradient is a company surfaced as a portfolio company of multicoin-capital, wing-venture-capital
-  and added to the API Evangelist network as a stub for enrichment. Sector: crypto-web3. This profile
-  is a lead awaiting the enrichment pipeline.'
+description: >-
+  Gradient is a decentralized AI infrastructure company building the Open
+  Intelligence Stack — a peer-powered, sovereign alternative to centralized AI
+  clouds. Its stack pairs Parallax (a distributed model-serving / world inference
+  engine that turns heterogeneous machines into one AI cluster), Lattica (a
+  universal peer-to-peer data-motion engine that moves model weights and
+  inference tokens across a global machine mesh), Echo (distributed reinforcement
+  learning) and Symphony (a decentralized multi-agent framework). Gradient Cloud
+  is the enterprise inference offering, exposing an OpenAI-compatible REST API
+  (model listing, chat completion, and text completion, streaming or
+  non-streaming) at apis.gradient.network. The projects run atop a Solana-based
+  network whose Sentry Node browser extension let contributors share edge
+  compute. Gradient is backed by Multicoin Capital and Wing Venture Capital.
 url: https://raw.githubusercontent.com/api-evangelist/gradient/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - multicoin-capital
 - wing-venture-capital
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: enriched
+x-tier-reason: portfolio-lead-enriched
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Crypto Web3
-apis: []
+- Artificial Intelligence
+- Machine Learning
+- LLM Inference
+- Decentralized Infrastructure
+- Distributed Computing
+- Edge Computing
+- Developer Tools
+apis:
+- aid: gradient:gradient-chat-api
+  name: Gradient Chat API
+  description: Chat completion
+  humanURL: >-
+    https://docs.gradient.network/enterprise-solutions/gradient-cloud/api-reference-documentation
+  baseURL: https://apis.gradient.network/api/v1
+  tags:
+  - Chat
+  properties:
+  - type: OpenAPI
+    url: openapi/gradient-chat-api-openapi.yml
+  - type: APIReference
+    url: >-
+      https://docs.gradient.network/enterprise-solutions/gradient-cloud/api-reference-documentation
+  - type: Documentation
+    url: https://docs.gradient.network
+- aid: gradient:gradient-completions-api
+  name: Gradient Completions API
+  description: Text completion
+  humanURL: >-
+    https://docs.gradient.network/enterprise-solutions/gradient-cloud/api-reference-documentation
+  baseURL: https://apis.gradient.network/api/v1
+  tags:
+  - Completions
+  properties:
+  - type: OpenAPI
+    url: openapi/gradient-completions-api-openapi.yml
+  - type: APIReference
+    url: >-
+      https://docs.gradient.network/enterprise-solutions/gradient-cloud/api-reference-documentation
+  - type: Documentation
+    url: https://docs.gradient.network
+- aid: gradient:gradient-models-api
+  name: Gradient Models API
+  description: Model listing and management
+  humanURL: >-
+    https://docs.gradient.network/enterprise-solutions/gradient-cloud/api-reference-documentation
+  baseURL: https://apis.gradient.network/api/v1
+  tags:
+  - Models
+  properties:
+  - type: OpenAPI
+    url: openapi/gradient-models-api-openapi.yml
+  - type: APIReference
+    url: >-
+      https://docs.gradient.network/enterprise-solutions/gradient-cloud/api-reference-documentation
+  - type: Documentation
+    url: https://docs.gradient.network
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -26,3 +104,50 @@ maintainers:
 common:
 - type: Website
   url: https://gradient.network
+- type: DeveloperPortal
+  url: https://docs.gradient.network
+- type: Documentation
+  url: https://docs.gradient.network
+- type: APIReference
+  url: https://docs.gradient.network/enterprise-solutions/gradient-cloud/api-reference-documentation
+- type: Blog
+  url: https://gradient.network/blog
+- type: Support
+  url: https://discord.com/invite/gradientnetwork
+- type: GitHubOrganization
+  url: https://github.com/GradientHQ
+- type: LLMsTxt
+  url: llms/gradient-llms.txt
+- type: Authentication
+  url: authentication/gradient-authentication.yml
+- type: AgenticAccess
+  url: agentic-access/gradient-agentic-access.yml
+- type: DomainSecurity
+  url: security/gradient-domain-security.yml
+- type: Packages
+  url: packages/gradient-packages.yml
+- type: MCPServer
+  url: mcp/gradient-mcp.yml
+- type: Overlay
+  url: overlays/gradient-cloud-overlay.yaml
+- type: Conformance
+  url: conformance/gradient-conformance.yml
+- type: ErrorCatalog
+  url: errors/gradient-problem-types.yml
+- type: Lifecycle
+  url: lifecycle/gradient-lifecycle.yml
+- type: Conventions
+  url: conventions/gradient-conventions.yml
+- type: ChangeLog
+  url: changelog/gradient-changelog.yml
+- type: CLI
+  url: cli/gradient-cli.yml
+- type: DataModel
+  url: data-model/gradient-data-model.yml
+- type: AgentSkill
+  url: skills/_index.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

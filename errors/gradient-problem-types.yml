@@ -1,0 +1,35 @@
+generated: '2026-07-19'
+method: derived
+format: openai-error
+source: openapi/gradient-cloud-openapi.yml
+envelope:
+  field: error
+  shape: '{ "error": { "message": string, "type": string, "code": string } }'
+  notes: OpenAI-style error envelope, not RFC 9457 application/problem+json.
+problems:
+  - status: 400
+    title: Bad Request
+    remediation: Check request parameters and JSON body against the API reference.
+    source_operation: openapi/gradient-cloud-openapi.yml#createChatCompletion
+  - status: 401
+    title: Unauthorized
+    remediation: "Provide a valid access key via `Authorization: Bearer <access-key>`."
+    source_operation: openapi/gradient-cloud-openapi.yml#createChatCompletion
+  - status: 402
+    title: Billing Check Failed
+    remediation: Account billing/quota check failed; verify plan and balance.
+    source_operation: openapi/gradient-cloud-openapi.yml#createChatCompletion
+  - status: 404
+    title: Model Not Found
+    remediation: Use a model id returned by GET /ai/models.
+    source_operation: openapi/gradient-cloud-openapi.yml#createChatCompletion
+  - status: 429
+    title: Rate Limit Exceeded
+    remediation: >-
+      Back off and retry with exponential backoff. Free users are limited to 60
+      requests/minute and 3 concurrent requests; paid limits are plan-based.
+    source_operation: openapi/gradient-cloud-openapi.yml#createChatCompletion
+  - status: 500
+    title: Internal Server Error
+    remediation: Retry with backoff; check the system status if persistent.
+    source_operation: openapi/gradient-cloud-openapi.yml#createChatCompletion

@@ -2,21 +2,25 @@ generated: '2026-07-19'
 method: derived
 status: candidate
 source: openapi/gradient-cloud-openapi.yml
-notes: >-
-  No official hosted/remote MCP server was found for Gradient Cloud. This is a
-  candidate tool list derived one-to-one from the documented OpenAI-compatible
-  API operations — a starting point for exposing Gradient Cloud inference to
-  agents via MCP.
+notes: No official hosted/remote MCP server was found for Gradient Cloud. This is a candidate tool list
+  derived one-to-one from the documented OpenAI-compatible API operations — a starting point for exposing
+  Gradient Cloud inference to agents via MCP.
 server:
   name: gradient-cloud
   transport: http
 tools:
-  - name: list_models
-    description: List all available AI models on Gradient Cloud (no auth required).
-    source_operation: openapi/gradient-cloud-openapi.yml#listModels
-  - name: create_chat_completion
-    description: Create a chat completion (streaming or non-streaming) against a selected model.
-    source_operation: openapi/gradient-cloud-openapi.yml#createChatCompletion
-  - name: create_completion
-    description: Create a text completion (streaming or non-streaming) against a selected model.
-    source_operation: openapi/gradient-cloud-openapi.yml#createCompletion
+- name: list_models
+  description: List all available AI models on Gradient Cloud (no auth required).
+  source_operation: openapi/gradient-cloud-openapi.yml#listModels
+- name: create_chat_completion
+  description: Create a chat completion (streaming or non-streaming) against a selected model.
+  source_operation: openapi/gradient-cloud-openapi.yml#createChatCompletion
+- name: create_completion
+  description: Create a text completion (streaming or non-streaming) against a selected model.
+  source_operation: openapi/gradient-cloud-openapi.yml#createCompletion
+deployment:
+  mode: none
+  verified: derived
+  tools: 3
+  checked: '2026-08-12'
+  source: catalog MCP census

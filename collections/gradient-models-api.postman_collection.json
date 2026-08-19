@@ -1,0 +1,165 @@
+{
+  "item": [
+    {
+      "id": "4111c86e-573d-49fd-a7d7-af11a1b5bac2",
+      "name": "Models",
+      "description": {
+        "content": "Model listing and management",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "e1cd2db4-a2a1-43dc-962b-bfd6326e4580",
+          "name": "List all models",
+          "request": {
+            "name": "List all models",
+            "description": {
+              "content": "List of all available AI models. No authentication required.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "ai",
+                "models"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "120f4d0a-8be5-44bf-b3c0-ae9772553ebc",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "ai",
+                    "models"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"object\": \"list\",\n  \"data\": [\n    {\n      \"id\": \"qwen/qwen3-coder-480b-instruct-fp8\",\n      \"object\": \"model\",\n      \"created\": 1640995200,\n      \"owned_by\": \"qwen\",\n      \"permission\": [],\n      \"root\": \"qwen/qwen3-coder-480b-instruct-fp8\",\n      \"parent\": null\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "9a9ae3d7-d547-4da7-ba2b-e4ab934b2591",
+              "name": "Internal Server Error",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "ai",
+                    "models"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"error\": {\n    \"message\": \"string\",\n    \"type\": \"string\",\n    \"code\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://apis.gradient.network/api/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "716c4b14-e444-4c96-bf51-9a2409e4aa69",
+    "name": "Gradient Cloud AI Chat Models API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "OpenAI-compatible inference API for Gradient Cloud — the enterprise inference service of Gradient's Open Intelligence Stack, serving open models across a distributed compute network (Parallax) over Gradient's peer-to-peer data motion engine (Lattica). The API implements OpenAI-compatible interfaces for model listing, chat completion, and text completion (streaming and non-streaming). Generated by the API Evangelist enrichment pipeline from the provider's published API Reference Documentation; not an official provider OpenAPI. Verify against the live docs before production use.\n\nContact Support:\n Name: Gradient",
+      "type": "text/plain"
+    }
+  }
+}

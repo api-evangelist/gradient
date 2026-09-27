@@ -50,6 +50,15 @@ paths:
                 $ref: '#/components/schemas/Error'
 components:
   schemas:
+    ModelList:
+      type: object
+      properties:
+        object:
+          type: string
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/Model'
     Model:
       type: object
       properties:
@@ -71,15 +80,6 @@ components:
           type:
           - string
           - 'null'
-    ModelList:
-      type: object
-      properties:
-        object:
-          type: string
-        data:
-          type: array
-          items:
-            $ref: '#/components/schemas/Model'
     Error:
       type: object
       properties:

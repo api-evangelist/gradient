@@ -49,6 +49,9 @@ x-tier-reason: portfolio-lead-enriched
 specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
+x-docs-platform: gitbook
+x-docs-platform-confidence: high
+x-docs-platform-checked: 2026-10-03
 tags:
 - Company
 - Crypto Web3
@@ -59,6 +62,7 @@ tags:
 - Distributed Computing
 - Edge Computing
 - Developer Tools
+- Web3
 tags_raw:
 - Company
 - Crypto Web3
@@ -70,6 +74,7 @@ tags_raw:
 - Edge Computing
 - Developer Tools
 - Machine-Learning
+- Web3
 apis:
 - aid: gradient:gradient-chat-api
   name: Gradient Chat API

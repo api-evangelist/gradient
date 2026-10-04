@@ -76,22 +76,6 @@ tags_raw:
 - Machine-Learning
 - Web3
 apis:
-- aid: gradient:gradient-chat-api
-  name: Gradient Chat API
-  description: Chat completion
-  humanURL: >-
-    https://docs.gradient.network/enterprise-solutions/gradient-cloud/api-reference-documentation
-  baseURL: https://apis.gradient.network/api/v1
-  tags:
-  - Chat
-  properties:
-  - type: OpenAPI
-    url: openapi/gradient-chat-api-openapi.yml
-  - type: APIReference
-    url: >-
-      https://docs.gradient.network/enterprise-solutions/gradient-cloud/api-reference-documentation
-  - type: Documentation
-    url: https://docs.gradient.network
 - aid: gradient:gradient-completions-api
   name: Gradient Completions API
   description: Text completion
@@ -119,6 +103,22 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/gradient-models-api-openapi.yml
+  - type: APIReference
+    url: >-
+      https://docs.gradient.network/enterprise-solutions/gradient-cloud/api-reference-documentation
+  - type: Documentation
+    url: https://docs.gradient.network
+- aid: gradient:gradient-chat-completions-api
+  name: Gradient Chat Completions API
+  description: Chat completion
+  humanURL: >-
+    https://docs.gradient.network/enterprise-solutions/gradient-cloud/api-reference-documentation
+  baseURL: https://apis.gradient.network/api/v1
+  tags:
+  - Chat Completions
+  properties:
+  - type: OpenAPI
+    url: openapi/gradient-chat-completions-api-openapi.yml
   - type: APIReference
     url: >-
       https://docs.gradient.network/enterprise-solutions/gradient-cloud/api-reference-documentation

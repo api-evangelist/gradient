@@ -84,15 +84,6 @@ paths:
                 $ref: '#/components/schemas/Error'
 components:
   schemas:
-    Usage:
-      type: object
-      properties:
-        prompt_tokens:
-          type: integer
-        completion_tokens:
-          type: integer
-        total_tokens:
-          type: integer
     CompletionRequest:
       type: object
       required:
@@ -139,6 +130,15 @@ components:
               type: string
             code:
               type: string
+    Usage:
+      type: object
+      properties:
+        prompt_tokens:
+          type: integer
+        completion_tokens:
+          type: integer
+        total_tokens:
+          type: integer
     Completion:
       type: object
       properties:

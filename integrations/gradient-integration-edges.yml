@@ -1,0 +1,23 @@
+edges:
+- partner_name: OpenAI
+  partner: openai
+  partner_match: domain
+  type: contract
+  channel: provider-built
+  relationship: compatible
+  direction: provider-built
+  evidence: https://github.com/api-evangelist/gradient/blob/main/openapi/gradient-chat-completions-api-openapi.yml#L5
+  contract_reference:
+    repo: gradient
+    spec_file: gradient-chat-completions-api-openapi.yml
+    property: description
+    value: OpenAI-compatible
+    note: 'gradient declares OpenAI compatibility: ''description: OpenAI-compatible inference API for Gradient Cloud
+      — the enterprise inference service of Gradient''s Open Intelligence Stack, serving open models ac'''
+    detected_by: sweep-model-routing.py
+    detected: '2026-10-13'
+  detected_by: sweep-model-routing.py
+  first_seen: '2026-10-13'
+generated: '2026-10-13'
+method: searched
+checked: []

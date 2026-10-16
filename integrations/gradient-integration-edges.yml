@@ -15,7 +15,7 @@ edges:
     note: 'gradient declares OpenAI compatibility: ''description: OpenAI-compatible inference API for Gradient Cloud
       — the enterprise inference service of Gradient''s Open Intelligence Stack, serving open models ac'''
     detected_by: sweep-model-routing.py
-    detected: '2026-10-13'
+    detected: '2026-10-15'
   detected_by: sweep-model-routing.py
   first_seen: '2026-10-13'
 generated: '2026-10-13'

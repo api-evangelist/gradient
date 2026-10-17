@@ -84,6 +84,30 @@ paths:
                 $ref: '#/components/schemas/Error'
 components:
   schemas:
+    Completion:
+      type: object
+      properties:
+        id:
+          type: string
+        object:
+          type: string
+        created:
+          type: integer
+        model:
+          type: string
+        choices:
+          type: array
+          items:
+            type: object
+            properties:
+              text:
+                type: string
+              index:
+                type: integer
+              finish_reason:
+                type: string
+        usage:
+          $ref: '#/components/schemas/Usage'
     CompletionRequest:
       type: object
       required:
@@ -139,30 +163,6 @@ components:
           type: integer
         total_tokens:
           type: integer
-    Completion:
-      type: object
-      properties:
-        id:
-          type: string
-        object:
-          type: string
-        created:
-          type: integer
-        model:
-          type: string
-        choices:
-          type: array
-          items:
-            type: object
-            properties:
-              text:
-                type: string
-              index:
-                type: integer
-              finish_reason:
-                type: string
-        usage:
-          $ref: '#/components/schemas/Usage'
   securitySchemes:
     AccessKey:
       type: http

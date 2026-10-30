@@ -64,6 +64,117 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Gradient is a company surfaced as a portfolio company of multicoin-capital, wing-venture-capital and added to the API Evangelist network as a stub for enrichment. Sector: crypto-web3. This profile is a lead awaiting the enrichment pipeline.
+Gradient is a decentralized AI infrastructure company building the Open Intelligence Stack — a peer-powered, sovereign alternative to centralized AI clouds. Its stack pairs Parallax (a distributed model-serving / world inference engine that turns heterogeneous machines into one AI cluster), Lattica (a universal peer-to-peer data-motion engine that moves model weights and inference tokens across a global machine mesh), Echo (distributed reinforcement learning) and Symphony (a decentralized multi-agent framework). Gradient Cloud is the enterprise inference offering, exposing an OpenAI-compatible REST API (model listing, chat completion, and text completion, streaming or non-streaming) at apis.gradient.network. The projects run atop a Solana-based network whose Sentry Node browser extension let contributors share edge compute. Gradient is backed by Multicoin Capital and Wing Venture Capital.
 
-Backed by: multicoin-capital, wing-venture-capital — https://gradient.network
+**Areas:** Company · Web3 · Artificial Intelligence · Machine Learning · Inference · Decentralized Infrastructure · Distributed Computing · Edge Computing · Developer Tools
+
+## Gradient on APIs.io
+
+Everything profiled for Gradient is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/gradient/](https://apis.io/providers/gradient/)** — or go straight to one of the APIs or properties below.
+
+### APIs (3)
+
+- [Gradient Completions API](https://apis.io/apis/gradient/gradient-completions-api/) — Text completion
+- [Gradient Models API](https://apis.io/apis/gradient/gradient-models-api/) — Model listing and management
+- [Gradient Chat Completions API](https://apis.io/apis/gradient/gradient-chat-completions-api/) — Chat completion
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [gradient-cloud](https://apis.io/servers/gradient/gradient-cloud/)
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Gradient Agentic Access](https://apis.io/agentic-access/gradient/gradient-agentic-access/)
+
+#### Collections (3)
+
+Postman and Open Collection request collections.
+
+- [Gradient Cloud AI Chat API](https://apis.io/collections/gradient/open-gradient-chat-api/)
+- [Gradient Cloud AI Chat Completions API](https://apis.io/collections/gradient/open-gradient-completions-api/)
+- [Gradient Cloud AI Chat Models API](https://apis.io/collections/gradient/open-gradient-models-api/)
+
+#### Overlays (1)
+
+OpenAPI overlays, including conversational phrasing for each operation.
+
+- [Gradient Cloud Overlay](https://apis.io/overlays/gradient/gradient-cloud-overlay/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Gradient Authentication](https://apis.io/security/gradient/gradient-authentication/)
+- [Gradient Domain Security](https://apis.io/security/gradient/gradient-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://gradient.network)
+- [Documentation](https://docs.gradient.network)
+- [API reference](https://docs.gradient.network/enterprise-solutions/gradient-cloud/api-reference-documentation)
+- [Support](https://discord.com/invite/gradientnetwork)
+- [Blog](https://gradient.network/blog)
+- [GitHub](https://github.com/GradientHQ)
+
+## API Evangelist rating
+
+**Kin Score 24.1** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 14.6 |
+| Contract governance | 4.5 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 54.2 |
+| Access clarity | 0.0 |
+
+**Agent readiness 29.0** — agent-ready
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | verified |
+| OpenAPI Examples | verified |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | derived (partial credit) |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 15.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/gradient/](https://apis.io/providers/gradient/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Gradient: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/gradient/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
